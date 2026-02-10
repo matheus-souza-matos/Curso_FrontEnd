@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript no HTML</title>
+</head>
+<body>
+    <h1>Meu primeiro JavaScript</h1>
+    <p>Mudando atributos com JavaScript</p>
+
+    <img id="imagem" src="/Aula9/img/lamp-desligada.gif" alt="">
+
+    <p>
+        <button type="button" onclick="luz(1)">Luz Acesa</button>
+        <button type="button" onclick="luz(0)">Luz Apagada</button>
+    </p>
+
+    <script>
+        const luz = (estado) => {
+            let foto;
+
+            if(estado == 0){
+                foto = '/Aula9/img/lamp-desligada.gif'
+            } else{
+                foto = '/Aula9/img/lamp-ligada.gif'
+            }
+            document.getElementById('imagem').src = foto;
+        }
+    </script>
+</body>
+</html>

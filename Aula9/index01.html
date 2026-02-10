@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com  botão</title>
+    <style>
+        .testebtn {
+            border: 4px solid;
+            padding: 30px 80px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 10px;
+            background-color: rgb(139, 109, 71);
+            cursor: pointer;
+        }
+
+        .testebtn:hover{
+            background-color: rgb(184, 54, 54);
+            transition: 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <h1>Utilizando botões</h1>
+
+    <p>Utilizando botões em html</p>
+    <button>Clique Agora</button>
+
+    <hr>
+
+    <p>Adicionando estilo ao botão</p>
+    <button class="testebtn">Clique Aqui</button>
+
+    <hr>
+
+    <p>Adicionando botão não clicável</p>
+    <button disabled>Clique Aqui</button>
+
+    <hr>
+
+    <p>Adicionando botão em javascript</p>
+    <button onclick="alert('Olá mundo')">Clique Aqui</button>
+
+    <hr>
+
+    <h4>Botões em formulários</h4>
+    <p>Exemplos de tipos de botões:</p>
+
+    <form action="">
+        <label>Primeiro nome</label>
+        <input type="text">
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar form</button>
+    </form>
+
+</body>
+</html>
